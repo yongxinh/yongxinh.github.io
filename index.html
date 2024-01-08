@@ -76,13 +76,13 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #198d9c;
+  background-color: #f44336;
   color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #198d9c;
+  background-color: #f44336;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -142,7 +142,9 @@ input {
   <li>Organize office</li>
 </ul>
 
-<script>
+<script src="my-todo-list.js"></script>
+
+<!-- <script>
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -184,7 +186,9 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-  var span = document.createElement("SPAN");  
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
@@ -196,7 +200,7 @@ function newElement() {
     }
   }
 }
-</script>
+</script> -->
 
 </body>
 </html>
